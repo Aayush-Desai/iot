@@ -7,8 +7,8 @@ from sklearn.neighbors import KNeighborsClassifier
 
 myMQTTClient = AWSIoTMQTTClient("lab1_thing")
 
-myMQTTClient.configureEndpoint("a278h0kf2bfot2-ats.iot.us-east-2.amazonaws.com", 8883)
-myMQTTClient.configureCredentials("./AmazonRootCA1.pem","./e66b73b0c7-private.pem.key", "./e66b73b0c7-certificate.pem.crt")
+myMQTTClient.configureEndpoint("", )
+myMQTTClient.configureCredentials("")
 
 myMQTTClient.connect()
 
