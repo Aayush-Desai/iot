@@ -43,8 +43,8 @@ for i in dictIn.keys():
 
 myMQTTClient = AWSIoTMQTTClient("lab1_thing")
 
-myMQTTClient.configureEndpoint("a278h0kf2bfot2-ats.iot.us-east-2.amazonaws.com", 8883)
-myMQTTClient.configureCredentials("./AmazonRootCA1.pem","./e66b73b0c7-private.pem.key", "./e66b73b0c7-certificate.pem.crt")
+myMQTTClient.configureEndpoint("", )
+myMQTTClient.configureCredentials("")
 
 myMQTTClient.connect()
  
@@ -61,8 +61,8 @@ time.sleep(70)
 client1 = boto3.client(
     'iotanalytics',
     region_name='us-east-2',
-    aws_access_key_id='AKIA5I7HKAAZPQ6UPPVK',
-    aws_secret_access_key='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'
+    aws_access_key_id='',
+    aws_secret_access_key=''
 )
 dataset = "project_dst"
 dataset_url = client1.get_dataset_content(datasetName = dataset)['entries'][0]['dataURI']
